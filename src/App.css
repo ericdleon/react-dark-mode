@@ -1,0 +1,81 @@
+:root {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  --dark: #333;
+  --light: #fff;
+  --color-background: 39, 44, 56;
+  --color-text: 61, 148, 166;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-style ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 11rem;
+  justify-items: center;
+}
+.nav-style ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-style a {
+  text-decoration: none;
+  color: black;
+}
+
+.center {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.whiteButton {
+  display: flex;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.15s ease-out;
+  background: white;
+  color: black;
+  box-shadow: inset 0 0 10px #000000;
+
+}
+
+.blackButton {
+  display: flex;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.15s ease-out;
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-text));
+  box-shadow: inset 0 0 10px #fff;
+}
+
+.dark-theme {
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-text));
+  transition: all 0.15s ease-out;
+}
